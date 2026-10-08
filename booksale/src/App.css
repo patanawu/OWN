@@ -49,3 +49,126 @@
     height: 220px;
   }
 }
+
+.custom-nav-link {
+  border-radius: 8px;
+  padding: 8px 14px !important;
+  color: #526174;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.custom-nav-link:hover {
+  color: #1769d2;
+  background-color: #edf5ff;
+}
+
+.custom-nav-link.active {
+  color: #1769d2 !important;
+  background-color: #e5f1ff;
+  font-weight: 600;
+}
+
+.navbar-brand {
+  color: #17365f;
+}
+
+.navbar-brand:hover {
+  color: #1769d2;
+}
+/* ===== Navbar ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 1.5rem;
+}
+
+.site-navbar {
+  padding: 0.75rem 0;
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #212529;
+  letter-spacing: 0.3px;
+}
+
+.site-brand:hover {
+  color: #0d6efd;
+}
+
+.brand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  margin-right: 0.6rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #74c0fc, #0d6efd);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.custom-nav-link {
+  position: relative;
+  padding: 0.5rem 1rem !important;
+  border-radius: 999px;
+  font-weight: 500;
+  color: #495057 !important;
+  transition: all 0.25s ease;
+}
+
+.custom-nav-link:hover {
+  background: #e7f1ff;
+  color: #0d6efd !important;
+  transform: translateY(-1px);
+}
+
+.custom-nav-link.active {
+  background: #0d6efd;
+  color: #fff !important;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+@media (max-width: 575px) {
+  .site-brand {
+    font-size: 1.1rem;
+  }
+
+  .brand-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .custom-nav-link {
+    padding: 0.4rem 0.7rem !important;
+    font-size: 0.9rem;
+  }
+}
+/* ===== Not Found ===== */
+.notfound-page {
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound-icon {
+  font-size: 3.5rem;
+  color: #74c0fc;
+}
+
+.notfound-code {
+  background: linear-gradient(135deg, #74c0fc, #0d6efd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
