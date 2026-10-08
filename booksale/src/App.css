@@ -1,0 +1,51 @@
+
+.home-banner {
+  background: linear-gradient(120deg, #eaf4ff, #f8fbff);
+  border: 1px solid #dcecff;
+}
+
+.home-banner h1 {
+  color: #17365f;
+}
+
+.home-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.book-image {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card {
+  border-color: #e2edfa;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(23, 105, 210, 0.12) !important;
+}
+
+.team-icon {
+  color: #74c0fc;
+  font-size: 3rem;
+}
+
+.nav-link {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #1769d2 !important;
+}
+
+@media (max-width: 767px) {
+  .home-image {
+    height: 220px;
+  }
+}
