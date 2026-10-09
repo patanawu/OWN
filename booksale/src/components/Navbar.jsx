@@ -10,34 +10,32 @@ function Navbar() {
             <span className="brand-icon">
               <i className="fa-solid fa-book"></i>
             </span>
-            bookstore
+            booksale
           </NavLink>
 
           <div className="navbar-nav ms-auto flex-row gap-1 gap-md-2">
             <NavLink
               to="/"
               end
-              className={({ isActive }) =>
-                `nav-link custom-nav-link ${isActive ? "active" : ""}`
-              }
+              className={({ isActive }) => `nav-link custom-nav-link ${isActive ? "active" : ""}`}
             >
               <i className="fa-solid fa-house me-1"></i> Home
             </NavLink>
-
+            <NavLink
+              to="/book"
+              className={({ isActive }) => `nav-link custom-nav-link ${isActive ? "active" : ""}`}
+            >
+              <i className="fa-solid fa-book-open me-1"></i> Book
+            </NavLink>
             <NavLink
               to="/team"
-              className={({ isActive }) =>
-                `nav-link custom-nav-link ${isActive ? "active" : ""}`
-              }
+              className={({ isActive }) => `nav-link custom-nav-link ${isActive ? "active" : ""}`}
             >
               <i className="fa-solid fa-users me-1"></i> Team
             </NavLink>
-
             <NavLink
               to="/contact"
-              className={({ isActive }) =>
-                `nav-link custom-nav-link ${isActive ? "active" : ""}`
-              }
+              className={({ isActive }) => `nav-link custom-nav-link ${isActive ? "active" : ""}`}
             >
               <i className="fa-solid fa-envelope me-1"></i> Contact
             </NavLink>
